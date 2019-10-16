@@ -1,0 +1,9 @@
+#program to check leap year or not
+y=int(input("Enter the year"))
+if y%400==0:
+  print("The year is a Century Leap Year")
+elif y%100!=0 and y%4==0:
+  print("Year is a Leap year")
+else:
+  print("Year is not a leap year")
+ 
