@@ -1,0 +1,23 @@
+x=float(input("Enter the value of x"))
+
+n=float(input("Enter the value of n"))
+
+i=1
+
+s=0
+
+while i<n: 
+
+ y=x**i
+
+ print(y, "+", end='')
+
+ s=s+y
+  
+ i+=1
+
+print(x**n) #to print the last element of series
+
+s=s+(x**n). #to add the last element of series
+
+print("Sum of series =", s) 
