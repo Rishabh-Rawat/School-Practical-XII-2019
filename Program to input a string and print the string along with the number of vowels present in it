@@ -1,7 +1,9 @@
-st=input("Enter the string").lower()
+st=input("Enter the string")
 print("Entered string =",st)
+st=st.lower()
 c=0
+v=['a','e','i','o','u']
 for i in st:
-    if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+    if i in v:
         c+=1
 print("Number of vowels in entered string =",c)
