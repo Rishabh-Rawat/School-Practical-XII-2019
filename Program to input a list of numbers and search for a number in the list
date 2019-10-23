@@ -1,0 +1,8 @@
+l=eval(input("Enter the list of numbers"))
+x=int(input("Enter the number"))
+for i in l:
+    if i==x:
+        print("ELement present")
+        break
+else:
+    print("Element not found")
