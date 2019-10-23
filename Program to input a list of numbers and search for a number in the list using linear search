@@ -1,3 +1,4 @@
+#linear search
 l=eval(input("Enter the list of numbers"))
 x=int(input("Enter the number"))
 for i in l:
