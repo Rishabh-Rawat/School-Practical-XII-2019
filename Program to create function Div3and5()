@@ -1,0 +1,17 @@
+def Div3and5(t):
+    s=0
+    for i in t:
+        if i%3==0 and i%5==0:
+            s=s+i
+    return s
+
+#main
+l=[]
+for i in range(10):
+    print("Enter the ",i+1,"th number of the tuple",end=" ",sep="")
+    e=int(input())
+    l.append(e)
+t=tuple(l)
+print("Entered tuple :",t)
+print("Sum of numbers in tuple divisible by 3 and 5 =",Div3and5(t))
+
