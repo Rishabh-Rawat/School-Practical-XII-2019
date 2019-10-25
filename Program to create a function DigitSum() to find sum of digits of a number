@@ -1,0 +1,8 @@
+def DigitSum(n):
+    s=0
+    n=str(n)
+    for i in n:
+       s=s+int(i)
+    return s
+n=int(input("Enter the number"))
+print("Sum of digits =",DigitSum(n))
