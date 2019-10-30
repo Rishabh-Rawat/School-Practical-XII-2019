@@ -1,0 +1,52 @@
+#python program to implement stack operations
+def isEmpty(stk):
+    if len(stk)==0:
+        return True
+    else:
+        return False
+def push(stk,n):
+    stk.append(n)
+def pop(stk):
+    if isEmpty(stk):
+        print("UNDERFLOW CONDITION")
+    else:
+        print("Deleted element:",stk.pop())
+def peek(stk):
+    return stk[-1]
+def display(stk):
+    if isEmpty(stk):
+        print("No Element Present")
+    else:
+        for i in range(-1,-len(stk)-1,-1):
+            if i==-1:
+                print("TOP",stk[i])
+            else:
+                print("   ",stk[i])
+#main
+stk=[]
+while True:
+    print("                    Stack operations")
+    print("                    1.PUSH")
+    print("                    2.POP")
+    print("                    3.PEEK")
+    print("                    4.DISPLAY STACK")
+    print("                    5.EXIT")
+    ch=int(input("                    Enter the choice"))
+    if ch==1:
+        n=input("Enter the element to PUSH")
+        push(stk,n)
+        print("Element pushed")
+    elif ch==2:
+        pop(stk)
+    elif ch==3:
+        if isEmpty(stk):
+            print("UNDERFLOW CONDITION")
+        else:
+            print(peek(stk))
+    elif ch==4:
+        display(stk)
+    elif ch==5:
+        break
+    else:
+        print("INVALID CHOICE ENTERED")
+print("THANKS FOR USING MY SERVICES")
