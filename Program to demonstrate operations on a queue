@@ -1,0 +1,62 @@
+#queue operations
+def isEmpty(qu):
+    if len(qu)==0:
+        return True
+    else:
+        return False
+def ENQUEUE(qu,item):
+    qu.append(item)
+    if len(qu)==1:
+        rear=front=0
+    else:
+        rear=len(qu)-1
+        front=0
+def DEQUEUE(qu):
+    if isEmpty(qu):
+        print("UNDERFLOW CONDITION")
+    else:
+        a= qu.pop()
+        print("ELEMENT DELETED:",a)
+
+def peek(stk):
+    return stk[-1]
+
+def display(qu):
+    if isEmpty(qu):
+        print("NO ELEMENT PRESENT")
+    else:
+        for i in range(len(qu)):
+            if i==0:
+                print("FRONT",qu[i])
+            elif i==len(qu)-1:
+                print("REAR ",qu[i])
+            else:
+                print("     ",qu[i])
+#main
+qu=[]
+while True:
+    print("                    QUEUE OPERATIONS")
+    print("                    1.ENQUEUE")
+    print("                    2.DEQUEUE")
+    print("                    3.DISPLAY QUEUE")
+    print("                    4.PEEK")
+    print("                    5.EXIT")
+    ch=int(input("                    Enter your choice"))
+    if ch==1:
+        x=input("Enter the element to be inserted")
+        ENQUEUE(qu,x)
+        print("ELEMENT HAS BEEN INSERTED")
+    elif ch==2:
+        DEQUEUE(qu)
+    elif ch==3:
+        display(qu)
+    elif ch==4:
+        if isEmpty(qu):
+            print("UNDERFLOW CONDITION")
+        else:
+            print(peek(qu))
+    elif ch==5:
+        break
+    else:
+        print("INVALID CHOICE ENTERED")
+print("THANKS FOR USING MY SERVICES")
