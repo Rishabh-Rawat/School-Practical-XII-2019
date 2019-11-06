@@ -1,4 +1,4 @@
-f=open("Test.txt","r")  
+f=open("book.txt","r")  
 L=f.readlines()
 c=c1=0
 v=['a','e','i','o','u']
