@@ -1,5 +1,5 @@
-f=open("Test.txt",'r')
-f1=open("Test.txt",'r')
+f=open("book.txt",'r')
+f1=open("book.txt",'r')
 st=f.read()
 print("Contents of file :")
 print(st)
