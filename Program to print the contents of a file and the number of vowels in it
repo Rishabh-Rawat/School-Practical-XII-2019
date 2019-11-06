@@ -1,4 +1,4 @@
-f=open("Test.txt",'r')
+f=open("story.txt",'r')
 st=f.read()
 print("Contents of file :")
 print(st)
