@@ -1,0 +1,12 @@
+f=open("Top.txt","r")
+st=f.readlines()
+
+c=0
+print("Contents of file :")
+for i in st:
+    print(i)
+    if i[0]=="A":
+        c+=1
+print("\n*****FILE END*****")
+print()
+print("Number of lines starting with 'A' =",c)
