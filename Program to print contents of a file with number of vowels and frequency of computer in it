@@ -1,0 +1,22 @@
+f=open("Test.txt",'r')
+f1=open("Test.txt",'r')
+st=f.read()
+print("Contents of file :")
+print(st)
+print()
+c=0
+v=['a','e','i','o','u']
+for i in st:
+    if i.lower() in v:
+        c=c+1
+print("Number of vowels in the file =",c)
+
+L=f1.readlines()
+c1=0
+for i in L:
+    j=i.split()
+    for k in j:
+        if k.lower()=="computer":
+            c1=c1+1
+print("Number of times 'computer' in the file =",c1)
+f.close()
