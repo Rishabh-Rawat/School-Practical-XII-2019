@@ -7,5 +7,7 @@ v=['a','e','i','o','u']
 for i in st:
     if i.lower() in v:
         c=c+1
+print("*****FILE END*****")
+print()
 print("Number of vowels in the file =",c)
 f.close()
