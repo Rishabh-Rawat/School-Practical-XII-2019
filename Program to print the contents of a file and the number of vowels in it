@@ -1,0 +1,11 @@
+f=open("Test.txt",'r')
+st=f.read()
+print("Contents of file :")
+print(st)
+c=0
+v=['a','e','i','o','u']
+for i in st:
+    if i.lower() in v:
+        c=c+1
+print("Number of vowels in the file =",c)
+f.close()
