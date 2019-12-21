@@ -15,7 +15,7 @@ def DEQUEUE(qu):
     if isEmpty(qu):
         print("UNDERFLOW CONDITION")
     else:
-        a= qu.pop()
+        a= qu.pop(0)
         print("ELEMENT DELETED:",a)
 
 def peek(stk):
